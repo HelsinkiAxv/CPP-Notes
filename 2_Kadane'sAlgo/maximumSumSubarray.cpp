@@ -76,19 +76,26 @@ using namespace std;
 
 
 
-//Max Sum Algo
-// int main(){
-//     for(int i = 0; i < n; ++i;){
-//         for(int j = i; j < n; ++j){
-//             if(i - 1 >= 0){
-//                 sum = ps[j] - ps[i - 1];
-//             }
-//             else{
-//                 sum = ps[j];
-//             }
-//         }
-//     }
-// }
+
+int main(){
+    int sum = 0;
+    int ans = INT_MIN;
+    int ps[] = {1,2,-5,3,8,-2,6};
+    int n = sizeof(ps)/sizeof(int);
+    for(int i = 0; i < n; ++i){
+        for(int j = i; j < n; ++j){
+            if(i - 1 >= 0){
+                sum = ps[j] - ps[i - 1];
+            }
+            else{
+                sum = ps[j];
+            }
+            ans = max(ans,sum);
+        }
+        cout<< sum << " ";
+    }
+    cout<< endl << ans <<endl;
+}
 
 
 
