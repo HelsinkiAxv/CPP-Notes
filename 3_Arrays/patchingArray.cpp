@@ -11,7 +11,7 @@ int main() {
 
 	int nextNumberNeeded = 1;
 	int weCanGenerateTill = 0;
-	
+
 	while (weCanGenerateTill < N) {
 		// Jab tak hum nextNumberNeeded ko jaha tak generateKar skte usse upr nhi krte
 		// there is no point
